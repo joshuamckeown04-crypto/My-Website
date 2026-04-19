@@ -33,3 +33,51 @@ body { background: var(--gray); color: var(--slate); }
 .detail-item strong { display: block; color: var(--blue); text-transform: uppercase; font-size: 0.8rem; }
 
 @media (max-width: 768px) { .grid, .contact-grid { grid-template-columns: 1fr; } .hero h1 { font-size: 2rem; } }
+
+/* Web Dev Detail Styles */
+.detail-page { padding: 100px 0; background: #fff; }
+
+.benefits-grid { 
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    gap: 30px; 
+    margin: 50px 0; 
+}
+
+.benefit-card { 
+    background: var(--gray); 
+    padding: 0 0 30px 0; 
+    border-radius: 15px; 
+    overflow: hidden; 
+    text-align: center;
+    border: 1px solid #eee;
+}
+
+.benefit-card img { width: 100%; height: 200px; object-fit: cover; margin-bottom: 20px; }
+.benefit-card h3 { color: var(--slate); margin-bottom: 15px; padding: 0 20px; }
+.benefit-card p { font-size: 0.95rem; color: #666; padding: 0 20px; line-height: 1.6; }
+
+/* Why Me Section */
+.why-me-box { 
+    display: flex; 
+    align-items: center; 
+    gap: 50px; 
+    background: var(--slate); 
+    color: white; 
+    padding: 50px; 
+    border-radius: 20px; 
+    margin-top: 50px; 
+}
+
+.why-text { flex: 1; }
+.why-text h3 { font-size: 2rem; margin-bottom: 20px; color: var(--blue); }
+.why-image { flex: 1; }
+.why-image img { width: 100%; border-radius: 15px; box-shadow: 0 20px 40px rgba(0,0,0,0.3); }
+
+.check-list { list-style: none; margin-top: 20px; }
+.check-list li { margin-bottom: 10px; font-weight: 600; color: #cbd5e1; }
+
+@media (max-width: 850px) {
+    .why-me-box { flex-direction: column; padding: 30px; }
+    .why-image { order: -1; } /* Image on top for mobile */
+}
