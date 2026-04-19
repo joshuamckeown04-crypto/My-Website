@@ -1,0 +1,35 @@
+:root { --slate: #1e293b; --emerald: #10b981; --blue: #3b82f6; --gray: #f8fafc; }
+* { margin:0; padding:0; box-sizing:border-box; font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+
+body { background: var(--gray); color: var(--slate); }
+.container { max-width: 1100px; margin: auto; padding: 0 25px; }
+
+/* Navbar */
+.navbar { display: flex; justify-content: space-between; padding: 25px 5%; background: white; border-bottom: 1px solid #e2e8f0; }
+.logo { font-weight: 800; font-size: 1.2rem; }
+.logo span { color: var(--blue); }
+.nav-links a { text-decoration: none; color: var(--slate); margin-left: 20px; font-weight: 600; font-size: 0.9rem; }
+
+/* Hero */
+.hero { padding: 100px 0; text-align: center; background: white; }
+.badge { display: inline-block; padding: 5px 15px; background: #dbeafe; color: var(--blue); border-radius: 50px; font-size: 0.75rem; font-weight: 800; margin-bottom: 20px; }
+.hero h1 { font-size: 3rem; font-weight: 800; line-height: 1.1; margin-bottom: 20px; color: var(--slate); }
+.btn-main { background: var(--slate); color: white; padding: 15px 30px; text-decoration: none; border-radius: 8px; font-weight: 700; display: inline-block; margin-top: 20px; }
+
+/* Expertise Cards */
+.expertise { padding: 80px 0; }
+.grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; }
+.exp-card { background: white; padding: 30px; border-radius: 15px; box-shadow: 0 10px 25px rgba(0,0,0,0.05); }
+.exp-card img { width: 100%; height: 200px; object-fit: cover; border-radius: 10px; margin-bottom: 20px; }
+.exp-card h3 { margin-bottom: 10px; color: var(--slate); }
+.tags span { display: inline-block; padding: 4px 10px; background: #f1f5f9; margin: 5px 5px 0 0; border-radius: 4px; font-size: 0.8rem; font-weight: 600; }
+
+/* Contact */
+.contact-area { padding: 80px 0; background: var(--slate); color: white; }
+.contact-grid { display: grid; grid-template-columns: 2fr 1fr; gap: 50px; margin-top: 40px; }
+.contact-form-box input, .contact-form-box textarea { width: 100%; padding: 15px; margin-bottom: 15px; border-radius: 8px; border: none; }
+.btn-submit { width: 100%; padding: 15px; background: var(--blue); border: none; color: white; font-weight: 700; border-radius: 8px; }
+.detail-item { margin-bottom: 25px; }
+.detail-item strong { display: block; color: var(--blue); text-transform: uppercase; font-size: 0.8rem; }
+
+@media (max-width: 768px) { .grid, .contact-grid { grid-template-columns: 1fr; } .hero h1 { font-size: 2rem; } }
